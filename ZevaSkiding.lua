@@ -56,7 +56,15 @@ local Window = WindUI:CreateWindow({
 Window:EditOpenButton({
     Title = "Open Zeva",
     Icon = "monitor",
+    CornerRadius = UDim.new(0,16),
+    StrokeThickness = 2,
+    Color = ColorSequence.new( -- gradient
+        Color3.fromHex("0059ff"), 
+        Color3.fromHex("F89B29")
+    ),
+    OnlyMobile = false,
     Enabled = true,
+    Draggable = true,
 })
 
 --========================
